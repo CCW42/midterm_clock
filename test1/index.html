@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>計時器</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>計時器</h1>
-    <div id="timer">00:00:00</div>
-    <label>設定目標日期及時間</label>
-    <input type="datetime-local" id="targetTimeInput" />
+<h1>計時器</h1>
+
+<div id="timer">00:00:00</div>
+
+<label>設定目標日期及時間</label>
+<input type="datetime-local" id="targetTimeInput" />
+
+<div>
     <button id="startButton">開始</button>
-    <button id="resetButton">重製</button>
-<!-- 在最後載入 JS，確保 HTML 元素已建立 -->
-    <script src="index.js"></script>
+    <button id="pauseButton" style="display: none;">暫停</button>
+    <button id="resumeButton" style="display: none;">繼續</button>
+    <button id="resetButton">重置</button>
+</div>
+
+<script src="index.js"></script>
+<style src="index.css"></style>
 </body>
 </html>
